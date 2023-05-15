@@ -1,7 +1,5 @@
 import { UserModel } from "../model/users";
 
-
-
 export const getUsers = () => UserModel.find();
 
 export const getUserByEmail = (email: string) => UserModel.findOne({ email });
